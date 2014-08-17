@@ -1,7 +1,7 @@
 elreyportfolio
 ==============
 
-Elrey Belmonti Dance Portfolio contains the code for [//elrey.dance](http://elrey.dance). It is an Angular website with static data that runs on PHP on Google App Engine (GAE). The code is built using grunt and is optimized for first-time visits. The BE code assumes a read-only deployed server (GAE).
+Elrey Belmonti Dance Portfolio contains the code for [//elrey.dance](http://elrey.dance). It is an Angular website with static data that runs on PHP on Google App Engine (GAE). The code is built using grunt and is optimized for first-time visits.
 
 ## Setup
 
@@ -41,14 +41,9 @@ To compile the css run:
 compass compile
 ```
 
-Note that compass compilation relies on imageMagick to convert the *.png sprite to a *.jpg one (see config.rb) so it won't work unless it is installed. You could disable the conversion but the size of the generated sprite will probably be pretty big. If you do that, remove that file from the list of files to clean on the grunt process or it will be deleted on `grunt`.
+Note that compass compilation relies on imageMagick to convert the *.png sprite to a *.jpg one (see config.rb) so it won't work unless it is installed. You could disable the conversion to remove the ImageMagick dependency but the size of the generated sprite will increase. If you do that though, remember to remove sprite.png from the list of files to clean or the grunt process will delete it.
 
 If the basic dependencies are met, simply run `grunt` and it should start the build process, compiling the css, generating sprites and installing npm and bower dependencies automatically.
-
-###Start
-
-Start your local server.
-If not using the GAE Launcher ( //developers.google.com/appengine/downloads ) make sure the app.yaml file is being used
 
 ## Structure
 - /admin
