@@ -1,0 +1,41 @@
+application: elreybelmonti
+version: 4
+runtime: php
+api_version: 1
+
+handlers:
+- url: /qr
+  script: qr.html
+- url: /resume
+  mime_type: application/pdf
+  static_files: data/resume.pdf
+  upload: data/resume.pdf
+- url: /vcard
+  mime_type: text/vcard
+  static_files: data/vcard.vcf
+  upload: data/vcard.vcf
+- url: /old
+  script: wowtooold.html
+
+- url: /font
+  static_dir: font
+  application_readable: true
+- url: /css
+  static_dir: css
+  application_readable: true
+- url: /img
+  static_dir: img
+  application_readable: true
+- url: /data
+  static_dir: data
+  application_readable: true
+- url: /js
+  static_dir: js
+  application_readable: true
+- url: /model
+  static_dir: model
+  application_readable: true
+- url: /dev
+  script: index.php
+- url: /.*
+  script: index.html

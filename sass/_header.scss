@@ -1,0 +1,105 @@
+header{
+	position: relative;
+	height: 300px;
+	width: 100%;
+	background-color: $blue;
+	z-index: 1001;
+	@include transition (all 0.5s ease-out);
+	#elrey{
+		left: 0;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-image: inline-image('elrey.jpg');
+		background-size: contain;
+		@include transition (all 0.5s ease-out);
+	}
+	h1{
+		position: absolute;
+		bottom: 25px;
+		right: 27px;
+	}
+	h2{
+		position: absolute;
+		right: 30px;
+		bottom: 0;
+	}
+	h3{
+		position: absolute;
+		top: 0;
+		right: 28px;
+	}
+	h4{
+		position: absolute;
+		right: 29px;
+		top: 50px;
+	}
+	h1,
+	h2,
+	h3,
+	h4{
+		@include transition (all 0.5s ease-out);
+	}
+}
+
+@media screen and (min-width: #{$small-width-control}px) and (max-width: #{$large-width-control}px),
+			screen and (max-height:  #{$small-height-control}px)  {
+	header{
+		h1{
+			font-size: 80px;
+		}
+		h2{
+			font-size: 16px;
+		}
+		h3{
+			font-size: 28px;
+		}
+		h4{
+			font-size: 16px;
+		}
+	}
+}
+@media screen and (min-width: #{$small-width-control + 1}px) and (max-width: #{$medium-width-control}px) and (min-height: #{$medium-height-control + 1}px){
+	header{
+		height: 240px;
+	}
+}
+@media screen and (max-width: #{$small-width-control}px),
+			screen and (max-height:  #{$medium-height-control}px) and (min-height: #{$small-height-control + 1}px){
+	header{
+		height: 150px;
+		h1,
+		h2{
+			opacity: 0;
+		}
+		h3{
+			right: 10px;
+			font-size: 28px;
+		}
+		h4{
+			font-size: 14px;
+			right: 10px;
+		}
+	}
+}
+@media screen and (max-width: #{$xsmall-width-control}px){
+	header #elrey{
+		opacity: 0;
+	}
+}
+@media screen and (max-height:  #{$small-height-control}px){
+	header{
+		height: 110px;
+		h1,
+		h2{
+			opacity: 0;
+		}
+		h3{
+			right: 10px;
+			font-size: 20px;
+		}
+		h4{
+			font-size: 10px;
+			right: 10px;
+		}
+	}
+}

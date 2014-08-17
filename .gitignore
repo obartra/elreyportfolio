@@ -1,0 +1,7 @@
+/css/
+/private/
+/node_modules/
+/js/vendor/
+/grunt/tmp/
+/.sass-cache/
+/.git/

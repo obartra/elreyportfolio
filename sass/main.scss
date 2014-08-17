@@ -1,0 +1,66 @@
+$blue : rgb(81,178,177);
+$small-height-control: 350;
+$medium-height-control: 450;
+$min-width: 240;
+$max-width: 1000;
+$xsmall-width-control: 260;
+$small-width-control: 320;
+$medium-width-control: 380;
+$large-width-control: 670;
+
+@import "compass/css3";
+
+@import "header";
+@import "content";
+@import "footer";
+@import "fullpageviewer";
+@import "fontello";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+h1,h2,h3{
+	color: white;
+	font-weight: 100; 
+}
+h1{
+	font-size: 135px;
+	margin: 0;
+}
+h3{
+	font-size: 40px;
+	margin: 20px 0;
+}
+h4{
+	color: black;
+	font-size: 19px;
+	font-weight: 100; 
+}
+
+.inner{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	min-width: #{$min-width}px;
+	max-width: #{$max-width}px;
+}
+/*so mobile devices that don't handle position fixed well work
+ (we wrap header and section under 'top' to simulate footer fixed with absolute positioning)*/
+top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	bottom: 50px;
+}

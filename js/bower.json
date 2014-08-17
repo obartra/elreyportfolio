@@ -1,0 +1,34 @@
+{
+  "name": "elreyportolio",
+  "version": "4.0.0",
+  "authors": [
+    "obartra <obartra@gmail.com>"
+  ],
+  "description": "Elrey's Dance Portfolio",
+  "main": "js/main.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "elrey",
+    "belmonti",
+    "dance",
+    "portfolio"
+  ],
+  "license": "CC",
+  "homepage": "//elrey.dance",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.22",
+    "angular-animate": "~1.2.22",
+    "requirejs": "~2.1.14"
+  }
+}

@@ -1,0 +1,220 @@
+[
+	{
+		"company" : "SHARP",
+		"description" : "The Big C",
+		"choreographer" : "Diane Sharp",
+		"photographer" : "Bill Herbert",
+		"year" : 2013,
+		"fullsrc" : "/img/full/2013.jpg",
+		"name" : "p2013",
+		"type" : "photo"
+	},{
+		"company" : "SHARP",
+		"description" : "The Big C",
+		"choreographer" : "Diane Sharp",
+		"photographer" : "Bill Herbert",
+		"year" : 2013,
+		"fullsrc" : "/img/full/2013_3.jpg",
+		"name" : "p2013_3",
+		"type" : "photo"
+	},{
+		"company" : "ETC Series 6",
+		"description" : "",
+		"choreographer" : "Ren Liam",
+		"photographer" : "Bill Herbert",
+		"year" : 2012,
+		"fullsrc" : "/img/full/2012.jpg",
+		"name" : "p2012",
+		"type" : "photo"
+	},{
+		"company" : "ETC Series 6",
+		"description" : "Barcelona",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "Bill Herbert",
+		"year" : 2012,
+		"fullsrc" : "/img/full/2012_2.jpg",
+		"name" : "p2012_2",
+		"type" : "photo"
+	},{
+		"company" : "Kun-Yang Lin",
+		"description" : "Photoshoot",
+		"choreographer" : "Kun-Yang Lin",
+		"photographer" : "Matthew Wright",
+		"year" : 2011,
+		"fullsrc" : "/img/full/2011.jpg",
+		"name" : "p2011",
+		"type" : "photo"
+	},{
+		"company" : "Kun-Yang Lin",
+		"description" : "Premiere Stravinsky's opera RENARD at the Kimmel Center",
+		"choreographer" : "Kun-Yang Lin",
+		"year" : 2011,
+		"fullsrc" : "//www.youtube.com/embed/71dpmaevVEI",
+		"name" : "p2011_2",
+		"type" : "video"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "Salt Excerpt 1",
+		"choreographer" : "Anne-Marie Mulgrew",
+		"year" : 2010,
+		"fullsrc" : "//www.youtube.com/embed/w8hgLqKWtIA",
+		"name" : "p2010",
+		"type" : "video"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "Salt Excerpt 2",
+		"choreographer" : "Anne-Marie Mulgrew",
+		"year" : 2010,
+		"fullsrc" : "//www.youtube.com/embed/sv-IRhD1FCE",
+		"name" : "p2010_2",
+		"type" : "video"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "Salt Excerpt 3",
+		"choreographer" : "Anne-Marie Mulgrew",
+		"year" : 2010,
+		"fullsrc" : "//www.youtube.com/embed/MYnp__5myq8",
+		"name" : "p2010_3",
+		"type" : "video"
+	},{
+		"company" : "ETC Series 2",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "Bill Herbert",
+		"year" : 2009,
+		"fullsrc" : "/img/full/2009.jpg",
+		"name" : "p2009",
+		"type" : "photo"
+	},{
+		"company" : "ETC Series 2",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "Bill Herbert",
+		"year" : 2009,
+		"fullsrc" : "/img/full/2009_2.jpg",
+		"name" : "p2009_2",
+		"type" : "photo"
+	},{
+		"company" : "ETC Series 2",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "Bill Herbert",
+		"year" : 2009,
+		"fullsrc" : "/img/full/2009_3.jpg",
+		"name" : "p2009_3",
+		"type" : "photo"
+	},{
+		"company" : "",
+		"description" : "",
+		"choreographer" : "",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2008,
+		"fullsrc" : "/img/full/2008.jpg",
+		"name" : "p2008",
+		"type" : "photo"
+	},{
+		"company" : "How Philly Moves",
+		"description" : "Mural Arts",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2008,
+		"fullsrc" : "/img/full/2008_2.jpg",
+		"name" : "p2008_2",
+		"type" : "photo"
+	},{
+		"company" : "How Philly Moves",
+		"description" : "Mural Arts",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2008,
+		"fullsrc" : "/img/full/2008_3.jpg",
+		"name" : "p2008_3",
+		"type" : "photo"
+	},{
+		"company" : "Fringe Festival",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_3.jpg",
+		"name" : "p2007_3",
+		"type" : "photo"
+	},{
+		"company" : "Fringe Festival",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_6.jpg",
+		"name" : "p2007_6",
+		"type" : "photo"
+	},{
+		"company" : "Fringe Festival",
+		"description" : "",
+		"choreographer" : "Elrey Belmonti",
+		"photographer" : "J.J. Tiziou",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007.jpg",
+		"name" : "p2007",
+		"type" : "photo"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "Photoshoot",
+		"choreographer" : "Anne-Marie Mulgrew",
+		"photographer" : "Deborah Boardman",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_8.jpg",
+		"name" : "p2007_8",
+		"type" : "photo"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "",
+		"choreographer" : "Anne-Marie Mulgrew",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_9.jpg",
+		"name" : "p2007_9",
+		"type" : "photo"
+	},{
+		"company" : "Anne-Marie Mulgrew",
+		"description" : "Photoshoot",
+		"photographer" : "Deborah Boardman",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_10.jpg",
+		"name" : "p2007_10",
+		"type" : "photo"
+	},{
+		"company" : "",
+		"description" : "Photoshoot",
+		"photographer" : "Deborah Boardman",
+		"year" : 2007,
+		"fullsrc" : "/img/full/2007_11.jpg",
+		"name" : "p2007_11",
+		"type" : "photo"
+	},{
+		"company" : "Group Motion",
+		"description" : "Rondo (Excerpt 1)",
+		"year" : 2006,
+		"fullsrc" : "//www.youtube.com/embed/M_e6aeoHL9U",
+		"name" : "p2006",
+		"type" : "video"
+	},{
+		"company" : "Group Motion",
+		"description" : "Rondo (Excerpt 2)",
+		"year" : 2006,
+		"fullsrc" : "//www.youtube.com/embed/ut7kESx7aUc",
+		"name" : "p2006_2",
+		"type" : "video"
+	},{
+		"company" : "Group Motion",
+		"description" : "Cultures and Species (Excerpt 1)",
+		"year" : 2004,
+		"fullsrc" : "//www.youtube.com/embed/9yAby9v1hcw",
+		"name" : "p2004",
+		"type" : "video"
+	},{
+		"company" : "Group Motion",
+		"description" : "Cultures and Species (Excerpt 2)",
+		"year" : 2004,
+		"fullsrc" : "//www.youtube.com/embed/cD4fi2NfogQ",
+		"name" : "p2004_2",
+		"type" : "video"
+	}
+]
