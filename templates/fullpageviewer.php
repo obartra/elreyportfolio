@@ -19,7 +19,7 @@
 		<h4>{{photos[index].company ? photos[index].description : ''}}</h4>
 	</div>
 	<!--[if lte IE 9]>
-		<img class="spinner" src="/img/spinner.gif"/>
+		<img class="spinner" src="/img/spinner.gif" alt="Loading..."/>
 	<![endif]-->
 	<![if !IE]>
 		<div class="spinner">
@@ -32,6 +32,7 @@
 			is-loaded
 			ng-show="loaded && photos[index].type==='photo'"
 			ng-src="{{photos[index].fullsrc}}"
+			alt="{{photos[index].description  + (photos[index].choreographer ? ', choreographed by ' + photos[index].choreographer :'') + (photos[index].photographer ? '. Photography by ' + photos[index].photographer : '')}}"
 		/>
 		<iframe
 			ng-if="photos[index].type === 'video'"

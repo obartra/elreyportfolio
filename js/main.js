@@ -1,7 +1,8 @@
 requirejs.config({
 	paths : {
 		'angular' : ['//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min', 'js/vendor/angular/angular.min'],
-		'angular-animate' : 'js/vendor/angular-animate/angular-animate.min'
+		'angular-animate' : 'js/vendor/angular-animate/angular-animate.min',
+		'font-loader': 'js/vendor/components-webfontloader/webfont'
 	},
 	shim: {
 		'angular': {
@@ -10,6 +11,10 @@ requirejs.config({
 		'angular-animate': {
 			deps: ['angular'],
 			exports : 'angular'
+		},
+		'font-loader' : {
+			deps : [],
+			exports: 'WebFont'
 		}
 	},
 	baseUrl : '/',
@@ -20,6 +25,7 @@ requirejs.config({
 
 require([
 	'angular',
+	'font-loader',
 	'angular-animate',
 	'js/app',
 	'js/controllers/photoListCtrl',
@@ -28,5 +34,10 @@ require([
 ], function(ng){
 	'use strict';
 
+	window.WebFont.load({
+		google: {
+			families: ['Roboto:100,300']
+		}
+	});
 	ng.bootstrap(document, ['app']);
 });

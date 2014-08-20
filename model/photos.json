@@ -18,6 +18,15 @@
 		"name" : "p2013_3",
 		"type" : "photo"
 	},{
+		"company" : "SHARP",
+		"description" : "Gia",
+		"choreographer" : "Diane Sharp",
+		"photographer" : "Bill Herbert",
+		"year" : 2013,
+		"fullsrc" : "/img/full/2013_2.jpg",
+		"name" : "p2013_2",
+		"type" : "photo"
+	},{
 		"company" : "ETC Series 6",
 		"description" : "",
 		"choreographer" : "Ren Liam",

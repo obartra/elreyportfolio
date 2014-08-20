@@ -1,6 +1,6 @@
 {
   "name": "elreyportolio",
-  "version": "4.0.0",
+  "version": "0.5.0",
   "authors": [
     "obartra <obartra@gmail.com>"
   ],
@@ -16,7 +16,7 @@
     "dance",
     "portfolio"
   ],
-  "license": "CC",
+  "license": "MIT",
   "homepage": "//elrey.dance",
   "private": true,
   "ignore": [
@@ -29,6 +29,7 @@
   "dependencies": {
     "angular": "~1.2.22",
     "angular-animate": "~1.2.22",
-    "requirejs": "~2.1.14"
+    "requirejs": "~2.1.14",
+    "components-webfontloader": "~1.5.2"
   }
 }

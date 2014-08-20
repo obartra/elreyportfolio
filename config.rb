@@ -11,7 +11,7 @@ images_dir = "img"
 on_sprite_saved do |filename|
 	if File.exists?(filename)
 		FileUtils.mv filename, filename.gsub(%r{-s[a-z0-9]{10}\.png$}, '.png')
-		system("convert -quality 75 img/small.png img/small.jpg")
+		system("convert -strip -interlace Plane -quality 75 img/small.png img/small.jpg")
 	end
 end
 

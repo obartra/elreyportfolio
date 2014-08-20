@@ -11,9 +11,9 @@ define(['angular', 'js/app'], function(ng, app){
 			}
 		},
 		getFromUrl = function(){
-			var found = window.location.href.match(/(?:\/gallery\/([0-9]+))$/i);
+			var found = window.location.href.match(/(?:\/gallery\/?([0-9]*))$/i);
 			if (found && found.length > 0){
-				var index = parseInt(found[1],10);
+				var index = parseInt(found[1] || 0, 10);
 				return index;
 			}else{
 				return -1;

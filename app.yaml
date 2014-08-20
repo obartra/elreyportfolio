@@ -1,7 +1,8 @@
 application: elreybelmonti
-version: 4
+version: 5
 runtime: php
 api_version: 1
+default_expiration: "1d"
 
 handlers:
 - url: /qr
@@ -17,15 +18,23 @@ handlers:
 - url: /old
   script: wowtooold.html
 
+- url: /favicon.ico
+  mime_type: image/x-icon
+  static_files: favicon.ico
+  upload: favicon.ico
+  expiration: "365d"
+
 - url: /font
   static_dir: font
   application_readable: true
+  expiration: "365d"
 - url: /css
   static_dir: css
   application_readable: true
 - url: /img
   static_dir: img
   application_readable: true
+  expiration: "7d"
 - url: /data
   static_dir: data
   application_readable: true
@@ -38,4 +47,10 @@ handlers:
 - url: /dev
   script: index.php
 - url: /.*
-  script: index.html
+  static_files: index.html
+  upload: index.html
+  http_headers:
+    Content-language: en
+    Content-type: text/html; charset=utf-8
+    Cache-Control: max-age=604800, must-revalidate
+    X-UA-Compatible: IE=edge,chrome=1

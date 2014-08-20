@@ -16,20 +16,29 @@ $large-width-control: 670;
 @import "fullpageviewer";
 @import "fontello";
 
+@media screen and (min-width: #{$small-width-control}px){
+	.wf-loading{
+		h1,h2,h3{
+			color: rgba(255,255,255,0);
+		}
+		h4{
+			color: rgba(0,0,0,0);
+		}
+	}
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
-
 body{
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 300;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
-
 h1,h2,h3{
-	color: white;
+	color: rgba(255,255,255,1);
 	font-weight: 100; 
 }
 h1{
@@ -41,7 +50,7 @@ h3{
 	margin: 20px 0;
 }
 h4{
-	color: black;
+	color: rgba(0,0,0,1);
 	font-size: 19px;
 	font-weight: 100; 
 }
