@@ -1,5 +1,11 @@
 @import "mixins";
 
+@media screen and (max-width: #{$medium-width-control}px){
+	.spinner{
+		opacity: 0;
+	}
+}
+
 @include keyframes(rotate){
 	from {@include transform(rotate(0deg));}
 	to {@include transform(rotate(360deg));}

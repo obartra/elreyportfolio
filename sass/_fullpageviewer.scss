@@ -16,7 +16,6 @@ full-page-viewer{
 	}
 
 	.fit,
-	.button,
 	button{
 		&.ng-hide-add,
 		&.ng-hide-remove {
@@ -62,7 +61,6 @@ full-page-viewer{
 		}
 	}
 
-	.button,
 	button{
 		position: absolute;
 		z-index: 2;
@@ -99,46 +97,67 @@ full-page-viewer{
 			padding-bottom: 3px;
 			float: right;
 			margin-left: 5px;
+			&:hover{
+				padding-top: 30px;
+			}
 		}
 		.icon-close{
 			font-size: 20px;
 			&:active{
 				background-color: rgb(223, 124, 42);
 			}
-			&:hover{
-				padding-top: 30px;
-			}
 		}
 		.icon-info{
 			font-size: 16px;
-			padding: 5px;
-			padding-top: 13px;
-			text-align: right;
+			padding-top: 17px;
+			padding-left: 5px;
+			padding-right: 5px;
 			&:active{
 				background-color: rgb(42, 69, 151);
 			}
-			&:hover{
-				padding-top: 30px;
-				.info{
-					max-width: 500px;
-					max-height: 100px;
-					@include transition(1s ease-in all 0.3s);
-				}
+		}
+	}
+	#info-popup{
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		max-width:100%;
+		@include transform(translate(-50%, 0));
+		@include transition(all 0.2s ease-in);
+		font-size: 15px;
+		border: 1px solid $blue;
+		text-align: left;
+		z-index: 2;
+		color: white;
+		background-color: black;
+		padding: 20px 0;
+		padding-right: 20px;
+		border-bottom: 0;
+		.icon-close{
+			top: -14px;
+			right: -1px;
+			padding: 4px;
+			background-color: $blue;
+		}
+		.column{
+			padding-left: 20px;
+			float: left;
+		}
+		.info{
+			padding: 3px;
+			.label{
+				font-weight: 100;
 			}
-			.info{
-				position: relative;
-				right: 0;
-				text-align: right;
-				overflow: hidden;
-				white-space: nowrap;
-				max-width: 0;
-				max-height: 0;
-				@include transition(0.8s ease-in all);
-				font-size: 12px;
-				.who{
-					font-weight: bold;
-				}
+			.data{
+				font-weight: 300;
 			}
+		}
+		&.ng-hide-add,
+		&.ng-hide-remove{
+			display: block !important;
+		}
+		&.ng-hide{
+			@include transform(translate(-50%, 110px));
 		}
 	}
 	.move{
@@ -165,6 +184,30 @@ full-page-viewer{
 			margin-right: 10px;
 			color: white;
 			display:inline-block;
+			@include transition(0.2s ease-in all);
+		}
+	}
+}
+
+@media screen and (max-width: #{$large-width-control}px){
+	full-page-viewer .title{
+		h3{
+			font-size: 30px;
+		}
+		h4{
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: #{$medium-width-control}px){
+	full-page-viewer{
+		.title{
+			h3,h4{
+				opacity: 0;
+			}
+		}
+		#info-popup{
+			font-size: 12px;
 		}
 	}
 }

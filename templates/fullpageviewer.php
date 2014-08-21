@@ -1,16 +1,7 @@
 <full-page-viewer ng-cloak ng-show="visible">
 	<div class="top-buttons">
 		<button class="top-button icon-close" ng-click="close();"></button>
-		<div class="top-button button icon-info" ng-show="photos[index].choreographer || photos[index].photographer">
-			<div ng-show="photos[index].choreographer" class="info">
-				<span class="what">Choreography by:</span>
-				<span class="who">{{photos[index].choreographer}}</span>
-			</div>
-			<div ng-show="photos[index].photographer" class="info">
-				<span class="what">Photography by:</span>
-				<span class="who">{{photos[index].photographer}}</span>
-			</div>
-		</div>
+		<button class="top-button icon-info" ng-click="showInfo=!showInfo"></button>
 	</div>
 	<button class="icon-left move" ng-show="canGoForward" ng-click="move(+1);"></button>
 	<button class="icon-right move" ng-show="canGoBack" ng-click="move(-1);"></button>
@@ -43,5 +34,28 @@
 			width="420"
 			height="315"
 		></iframe>
+	</div>
+	<div id="info-popup" ng-show="showInfo">
+		<button class="icon-close" ng-click="showInfo=false"></button>
+		<div class="column">
+			<div ng-show="photos[index].company" class="info">
+				<span class="label">Company:</span>
+				<span class="data">{{photos[index].company}}</span>
+			</div>
+			<div ng-show="photos[index].description" class="info">
+				<span class="label">Performance:</span>
+				<span class="data">{{photos[index].description}}</span>
+			</div>
+		</div>
+		<div class="column">
+			<div ng-show="photos[index].choreographer" class="info">
+				<span class="label">Choreography by:</span>
+				<span class="data">{{photos[index].choreographer}}</span>
+			</div>
+			<div ng-show="photos[index].photographer" class="info">
+				<span class="label">Photography by:</span>
+				<span class="data">{{photos[index].photographer}}</span>
+			</div>
+		</div>
 	</div>
 </full-page-viewer>
