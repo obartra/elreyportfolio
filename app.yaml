@@ -46,6 +46,9 @@ handlers:
   application_readable: true
 - url: /dev
   script: index.php
+- url: /(.*\.(txt|xml))$
+  static_files: \1
+  upload: /.*\.(txt|xml)$
 - url: /.*
   static_files: index.html
   upload: index.html
