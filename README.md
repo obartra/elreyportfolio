@@ -15,7 +15,7 @@ git clone https://github.com/[YOUR_USER_NAME]/elreyportfolio.git
 - PHP ( //php.net )
 - Compass ( //compass-style.org )
 - Node.js ( //nodejs.org )
-- ImageMagick ( //http://www.imagemagick.org )
+- ImageMagick ( //www.imagemagick.org )
 
 ####Installation
 
@@ -52,35 +52,35 @@ Based on the nature of the website (a portfolio) I anticipate that most users wi
 ### Fonts
 
 - 2 Fonts are in use:
--- 'Roboto' for the whole page with Helvetica fallback.
---- Loaded from Google Fonts using Google Async loader
---- ~15-20kb gzipped and OS/browser optimized.
---- It's a relatively popular font so it's likely it'll be cached on the browser or installed on the OS (e.g. Android 4.4 ships with it).
---- There's a chance of FOUT on small screens
----- This was done to avoid not displaying text for a long time since the font load could take a couple seconds on mobile devices (tested on an iPhone 4).
----- In that case (I think) a FOUT outweights not having text visible for that long.
--- A subset of 4 characters from 'Entypo' for the icons
---- Inlined in the css
---- ~6kb gzipped for all font formats combined
+    - 'Roboto' for the whole page with Helvetica fallback.
+        - Loaded from Google Fonts using Google Async loader
+        - ~15-20kb gzipped and OS/browser optimized.
+        - It's a relatively popular font so it's likely it'll be cached on the browser or installed on the OS (e.g. Android 4.4 ships with it).
+        - There's a chance of FOUT on small screens
+            - This was done to avoid not displaying text for a long time since the font load could take a couple seconds on mobile devices (tested on an iPhone 4).
+            - In that case (I think) a FOUT outweights not having text visible for that long.
+    - A subset of 4 characters from 'Entypo' for the icons
+        - Inlined in the css
+        - ~6kb gzipped for all font formats combined
 
 ### Images
 
 - JPEG files
--- Sprite (small.jpg)
---- stripped of extra information and saved as progressive jpg
---- The quality has been manually set to 75 which seemed to produce good results while minimizing artifacts.
---- Added to the DOM (with display:none) to trigger server load before CSS is parsed
---- ~65kb
--- Gallery Images
---- Most had already an insufficient resultion and were already optimized thus have been left as they were
+    - Sprite (small.jpg)
+        - stripped of extra information and saved as progressive jpg
+        - The quality has been manually set to 75 which seemed to produce good results while minimizing artifacts.
+        - Added to the DOM (with display:none) to trigger server load before CSS is parsed
+        - ~65kb
+    - Gallery Images
+        - Most had already an insufficient resultion and were already optimized thus have been left as they were
 - GIF files
--- Spinner
---- The loading photo/video spinner is only loaded for IE9- (other browsers rely on a CSS only implementation)
---- ~7kb
+    - Spinner
+        - The loading photo/video spinner is only loaded for IE9- (other browsers rely on a CSS only implementation)
+        - ~7kb
 - ICO files
--- favicon.ico
---- Optimized to 16 colors ~300bytes
---- It will most likely be loaded last and won't affect page load in any way
+    - favicon.ico
+        - Optimized to 16 colors ~300bytes
+        - It will most likely be loaded last and won't affect page load in any way
 
 ### CSS
 
