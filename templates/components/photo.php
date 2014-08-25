@@ -1,7 +1,7 @@
 <li class="photo"
 	ng-click="show(<?=intval($photo->index)?>)"
 	itemprop="workPerformed" itemscope="" itemtype="http://schema.org/CreativeWork"
-><a href="/gallery/<?=$photo->index;?>" ng-click="$event.preventDefault();">
+>
 	<meta itemprop="genre" content="dance"></meta>
 	<meta itemprop="dateCreated" content="<?=$photo->year;?>"></meta>
 	<?	if (isset($photo->choreographer) && strlen($photo->choreographer)){ ?>
@@ -28,4 +28,4 @@
 		<div class="videoicon"><div class="arrow"></div></div>
 	<? } ?>
 		<div class="img small-<?=$photo->name?>"></div>
-</a></li>
+</li>

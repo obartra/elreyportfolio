@@ -5,6 +5,15 @@ api_version: 1
 default_expiration: "7d"
 
 handlers:
+# static files
+- url: /resume
+  mime_type: application/pdf
+  static_files: data/resume.pdf
+  upload: data/resume.pdf
+- url: /vcard
+  mime_type: text/vcard
+  static_files: data/vcard.vcf
+  upload: data/vcard.vcf
 
 - url: /favicon.ico
   mime_type: image/x-icon
@@ -49,14 +58,6 @@ handlers:
   upload: .*\.(txt|xml)$
 
 # site's valid pages (/resume, /vcard, /qr, and /old. Everything else loads the main page. /gallery is also a valid path but its routed in JS)
-- url: /resume
-  mime_type: application/pdf
-  static_files: data/resume.pdf
-  upload: data/resume.pdf
-- url: /vcard
-  mime_type: text/vcard
-  static_files: data/vcard.vcf
-  upload: data/vcard.vcf
 - url: /qr
   static_files: qr.html
   upload: qr.html
