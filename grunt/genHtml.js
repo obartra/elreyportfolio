@@ -1,6 +1,6 @@
 module.exports = function(grunt){
 	grunt.task.registerTask('copytmp', 'Copies index.php to the /grunt/tmp directory', function(){
-		grunt.file.copy('index.php', 'grunt/tmp/index.php');
+		grunt.file.copy('dev/index.php', 'grunt/tmp/index.php');
 	});
 
 	grunt.task.registerTask('htmlgenfile', 'Generates a single html file from the index.php', function(){

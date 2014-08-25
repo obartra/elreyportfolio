@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--[if gt IE 8]>
-	<meta http-equiv="refresh" content="0;URL=/" />
-<![endif]-->
-<![if !IE]>
-	<meta http-equiv="refresh" content="0;URL=/" />
-<![endif]>
 <html class="old">
 	<head>
 		<meta charset="utf-8">
@@ -27,7 +21,7 @@
 				<li><label id="phone">Phone: <a href="tel:+1 2673252985">(267) 325 - 2985</a></label></li>
 				<li><label id="email">Email: <a href="mailto:me@elrey.dance">me@elrey.dance</a></label></li>
 			</ul>
-			<p>Your browser is <span class="emphasis">old</span> and not supported.</p>
+			<p>Your browser is <strong>old</strong> and not supported.</p>
 			<p>This is a simpler version of the site. To access the full site <a href="//browsehappy.com/">update your browser</a></p>
 		</div>
 	</body>

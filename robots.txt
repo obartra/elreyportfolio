@@ -1,3 +1,6 @@
 # robotstxt.org/
 
 User-agent: *
+Disallow: /old
+Disallow: /tel:+1 2673252985
+Disallow: /tel:+1 2673252985/

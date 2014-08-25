@@ -22,7 +22,7 @@ define(['angular', 'js/app'], function(ng, app){
 
 	app.directive('fullPageViewer', ['$rootScope', 'DATA', function($rootScope, DATA){
 		return {
-			restrict : 'AE',
+			restrict : 'C',
 			controller: ['$scope', function($scope){
 				$scope.visible = false;
 				$scope.photos = DATA;

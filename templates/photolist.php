@@ -1,24 +1,24 @@
-<div class="inner" ng-controller="photoListCtrl">
+<?
+	$photoStr = file_get_contents(PUBLIC_PATH . 'model/photos.json');
+	$photos = json_decode($photoStr);
+	$parsed = array();
+
+	foreach($photos as $index=>$photo)
+	{
+		$photo->index = $index;
+		$parsed[$photo->year][] = $photo;
+	}
+?>
+
+<ol class="inner" ng-controller="photoListCtrl">
 	<? foreach($parsed as $year=>$photos){ ?>
-	<div class="subsection">
+	<li>
 		<h1><?= $year; ?></h1>
-		<div class="photos">
-			<? foreach($photos as $photo){ ?>
-			<photo
-				class="photo <?php echo ($photo->type);?>"
-				ng-click="show(<?=intval($photo->index)?>)"
-			>
-				<div class="background small-<?=$photo->name;?>"></div>
-				<? if (isset($photo->company) && strlen($photo->company)){ ?>
-					<span><?=$photo->company;?></span>
-				<? }
-					if ($photo->type === 'video'){ ?>
-					<div class="videoicon"><div class="arrow"></div></div>
-				<? } ?>
-					<div class="img small-<?=$photo->name?>"></div>
-			</photo>
-			<? } ?>
-		</div>
-	</div>
+		<ul class="photos">
+			<? foreach($photos as $photo){
+				include(PUBLIC_PATH . 'templates/components/photo.php');
+			} ?>
+		</ul>
+	</li>
 	<? } ?>
-</div>
+</ol>

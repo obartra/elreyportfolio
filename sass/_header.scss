@@ -1,4 +1,4 @@
-header{
+.top header{
 	position: relative;
 	height: 300px;
 	width: 100%;
@@ -43,7 +43,7 @@ header{
 
 @media screen and (min-width: #{$small-width-control}px) and (max-width: #{$large-width-control}px),
 			screen and (max-height:  #{$small-height-control}px)  {
-	header{
+	.top header{
 		h1{
 			font-size: 80px;
 		}
@@ -59,13 +59,13 @@ header{
 	}
 }
 @media screen and (min-width: #{$small-width-control + 1}px) and (max-width: #{$medium-width-control}px) and (min-height: #{$medium-height-control + 1}px){
-	header{
+	.top header{
 		height: 240px;
 	}
 }
 @media screen and (max-width: #{$small-width-control}px),
 			screen and (max-height:  #{$medium-height-control}px) and (min-height: #{$small-height-control + 1}px){
-	header{
+	.top header{
 		height: 150px;
 		h1,
 		h2{
@@ -82,12 +82,12 @@ header{
 	}
 }
 @media screen and (max-width: #{$xsmall-width-control}px){
-	header #elrey{
+	.top header #elrey{
 		opacity: 0;
 	}
 }
 @media screen and (max-height:  #{$small-height-control}px){
-	header{
+	.top header{
 		height: 110px;
 		h1,
 		h2{

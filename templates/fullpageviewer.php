@@ -1,14 +1,14 @@
-<full-page-viewer ng-cloak ng-show="visible">
+<section class="full-page-viewer" ng-cloak ng-show="visible">
+	<header>
+		<h3>{{photos[index].company ? photos[index].company : photos[index].description}}</h3>
+		<h4>{{photos[index].company ? photos[index].description : ''}}</h4>
+	</header>
 	<div class="top-buttons">
 		<button class="top-button icon-close" ng-click="close();"></button>
 		<button class="top-button icon-info" ng-click="showInfo=!showInfo"></button>
 	</div>
 	<button class="icon-left move" ng-show="canGoForward" ng-click="move(+1);"></button>
 	<button class="icon-right move" ng-show="canGoBack" ng-click="move(-1);"></button>
-	<div class="title">
-		<h3>{{photos[index].company ? photos[index].company : photos[index].description}}</h3>
-		<h4>{{photos[index].company ? photos[index].description : ''}}</h4>
-	</div>
 	<!--[if lte IE 9]>
 		<img class="spinner" src="/img/spinner.gif" alt="Loading..."/>
 	<![endif]-->
@@ -21,7 +21,7 @@
 	<div class="fit">
 		<img
 			is-loaded
-			ng-show="loaded && photos[index].type==='photo'"
+			ng-show="loaded && photos[index].type === 'photo'"
 			ng-src="{{photos[index].fullsrc}}"
 			alt="{{photos[index].description  + (photos[index].choreographer ? ', choreographed by ' + photos[index].choreographer :'') + (photos[index].photographer ? '. Photography by ' + photos[index].photographer : '')}}"
 		/>
@@ -58,4 +58,4 @@
 			</div>
 		</div>
 	</div>
-</full-page-viewer>
+</section>

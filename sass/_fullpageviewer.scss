@@ -1,5 +1,5 @@
 @import "spinner";
-full-page-viewer{
+.full-page-viewer{
 	position: absolute;
 	z-index: 1003;
 	background: rgba(0,0,0,0.9);
@@ -12,6 +12,10 @@ full-page-viewer{
 	@include transition(0.2s ease-in all);
 	&.ng-hide-add,
 	&.ng-hide-remove{
+		display:block!important;
+		opacity: 0;
+	}
+	&.ng-hide{
 		opacity: 0;
 	}
 
@@ -19,7 +23,7 @@ full-page-viewer{
 	button{
 		&.ng-hide-add,
 		&.ng-hide-remove {
-			@include transition(0.3s ease-in all);
+			@include transition(0.3s ease-out all);
 			display:block!important;
 			opacity:1;
 		}
@@ -123,7 +127,7 @@ full-page-viewer{
 		bottom: 0;
 		max-width:100%;
 		@include transform(translate(-50%, 0));
-		@include transition(all 0.2s ease-in);
+		@include transition(all 0.3s ease-out);
 		font-size: 15px;
 		border: 1px solid $blue;
 		text-align: left;
@@ -170,7 +174,7 @@ full-page-viewer{
 			right: 0;
 		}
 	}
-	.title{
+	header{
 		position: absolute;
 		top: 0;
 		left: 50px;
@@ -184,13 +188,13 @@ full-page-viewer{
 			margin-right: 10px;
 			color: white;
 			display:inline-block;
-			@include transition(0.2s ease-in all);
+			@include transition(0.2s ease-out all);
 		}
 	}
 }
 
 @media screen and (max-width: #{$large-width-control}px){
-	full-page-viewer .title{
+	.full-page-viewer header{
 		h3{
 			font-size: 30px;
 		}
@@ -200,8 +204,8 @@ full-page-viewer{
 	}
 }
 @media screen and (max-width: #{$medium-width-control}px){
-	full-page-viewer{
-		.title{
+	.full-page-viewer{
+		header{
 			h3,h4{
 				opacity: 0;
 			}

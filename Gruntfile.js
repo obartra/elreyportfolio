@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 					baseUrl: ".",
 					name : "js/main.js",
 					mainConfigFile: "js/main.js",
-					out: "grunt/tmp/main.js",
+					out: "js/main.min.js",
 					findNestedDependencies: true,
 					preserveLicenseComments: false,
 					optimize: 'uglify2',
@@ -45,6 +45,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'index.html': 'grunt/tmp/index.html',
+					'wowtooold.html' : 'grunt/tmp/old.html',
+					'about.html' : 'grunt/tmp/about.html'
 				}
 			}
 		},

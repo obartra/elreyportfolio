@@ -3,7 +3,25 @@ $build = true;
 define('PUBLIC_PATH', dirname(__FILE__) . '/../');
 
 ob_start();
-	include(PUBLIC_PATH . 'index.php');
-	$content = ob_get_contents();
+	include(PUBLIC_PATH . 'dev/index.php');
+	$contentHtml = ob_get_contents();
 ob_end_clean();
-$html = file_put_contents(PUBLIC_PATH . 'grunt/tmp/index.html', $content);
+file_put_contents(PUBLIC_PATH . 'grunt/tmp/index.html', $contentHtml);
+
+ob_start();
+	include(PUBLIC_PATH . 'dev/old.php');
+	$contentOld = ob_get_contents();
+ob_end_clean();
+file_put_contents(PUBLIC_PATH . 'grunt/tmp/old.html', $contentOld);
+
+ob_start();
+	include(PUBLIC_PATH . 'dev/about.php');
+	$contentOld = ob_get_contents();
+ob_end_clean();
+file_put_contents(PUBLIC_PATH . 'grunt/tmp/about.html', $contentOld);
+
+ob_start();
+	include(PUBLIC_PATH . 'model/asyncRequests.php');
+	$contentJson = ob_get_contents();
+ob_end_clean();
+file_put_contents(PUBLIC_PATH . 'model/asyncRequests.json', $contentJson);

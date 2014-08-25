@@ -1,0 +1,44 @@
+@import "compass/css3";
+
+noscript{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	a{
+		position: relative;
+		font-size: 13px;
+		width: 500px;
+		padding: 7px;
+		margin: auto;
+		text-decoration: none;
+		color: white;
+		z-index: 1001;
+		line-height: 32px;
+		background: rgba(81,178,177, 0.4);
+		@include transition(0.2s ease-in all);
+		&:hover{
+			background-color: rgba(0,0,0,0.4);
+		}
+		&:active{
+			background: #df7c2a;
+		}
+	}
+}
+
+header h1,
+header h2,
+header h3,
+footer,
+footer a{
+	color: rgba(255,255,255,1) !important;
+}
+header h4{
+	color: rgba(0,0,0,1) !important;
+}
+.top section h1 {
+	color: #51b2b1 !important;
+}
+
+.photo{
+	cursor: default !important;
+}

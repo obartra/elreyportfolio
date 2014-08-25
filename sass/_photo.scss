@@ -13,6 +13,7 @@
 	margin-left: -1px;
 	overflow: hidden;
 	cursor: pointer;
+	list-style: none;
 	z-index: 0;
 	@include transition (all 0.4s ease-out);
 	.background{
