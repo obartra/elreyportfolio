@@ -39,6 +39,82 @@
 	h4{
 		@include transition (all 0.5s ease-out);
 	}
+	.thisismsg{
+		display: inline-block;
+		overflow: hidden;
+		width: 140px;
+		white-space: nowrap;
+		@include transition (all 0.3s ease-out);
+		position: relative;
+		top: 7px;
+		margin-right: 5px;
+		text-align: right;
+		&.ng-hide-add{
+			display: inline-block !important;
+			width: 140px;
+		}
+		&.ng-hide-remove{
+			display: inline-block !important;
+			width: 0;
+		}
+		&.ng-hide{
+			width: 0;
+		}
+	}
+	.dropdown{
+		display: inline-block;
+		border: 1px solid white;
+		padding: 0 7px;
+		text-align: left;
+		cursor: pointer;
+		position: relative;
+		height: 35px;
+		width: 150px;
+		overflow: hidden;
+		top: 12px;
+		color: white;
+		background: $blue;
+		font-size: 22px;
+		font-weight: 100;
+		outline: 0;
+		@include transition (all 0.2s ease-out);
+		&:hover{
+			color: $blue;
+			background-color: white;
+		}
+		ul{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			color: white;
+			background: $blue;
+			li{
+				cursor: pointer;
+				padding: 0 7px;
+				@include transition (all 0.3s ease-out);
+				&:hover,
+				&.active:hover{
+					color: black;
+					a{
+						color: black;
+					}
+				}
+			}
+			a{
+				text-decoration: none;
+				color: white;
+				font-size: 22px;
+			}
+		}
+		&.active{
+			height: 93px;
+		}
+	}
 }
 
 @media screen and (min-width: #{$small-width-control}px) and (max-width: #{$large-width-control}px),
@@ -47,8 +123,19 @@
 		h1{
 			font-size: 80px;
 		}
-		h2{
+		h2,
+		.dropdown{
 			font-size: 16px;
+		}
+		.dropdown{
+			height: 24px;
+			width: 100px;
+			&.active{
+				height: 68px;
+			}
+			ul li a{
+				font-size: 16px;
+			}
 		}
 		h3{
 			font-size: 28px;

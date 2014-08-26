@@ -9,6 +9,18 @@
 .top section{
 	position: relative;
 	width: 100%;
+	@include transition (all 0.2s ease-out);
+	&.ng-hide-add{
+		display: block !important;
+		opacity: 1;
+	}
+	&.ng-hide-remove{
+		display: block !important;
+		opacity: 0;
+	}
+	&.ng-hide{
+		opacity: 0;
+	}
 	h1{
 		color: $blue;
 		font-size: 40px;

@@ -2,9 +2,6 @@
 
 $blue : rgb(81,178,177);
 
-// @import "header";
-// @import "footer";
-
 body{
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -12,7 +9,9 @@ body{
 	overflow-y: auto;
 	overflow-x: hidden;
 }
-
+a, strong {
+	color: $blue;
+}
 h1,h2,h3{
 	font-weight: 100; 
 }
@@ -23,6 +22,7 @@ h1{
 h3{
 	font-size: 40px;
 	margin: 20px 0;
+	color: $blue;
 }
 h4{
 	color: black;
@@ -44,4 +44,15 @@ h4{
 }
 .emphasis{
 	font-style: italic;
+}
+
+li{
+	list-style: none;
+	.label{
+		color: $blue;
+	}
+	img{
+		max-width: 125px;
+		max-height: 125px;
+	}
 }

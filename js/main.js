@@ -23,6 +23,7 @@ require([
 	'angular-animate',
 	'js/app',
 	'js/controllers/photoListCtrl',
+	'js/controllers/pageCtrl',
 	'js/components/fullpageviewer',
 	'js/components/isloaded'
 ], function(ng){

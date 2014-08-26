@@ -42,13 +42,11 @@ handlers:
   static_dir: model
   application_readable: true
 
-# dev config, to access the unbuilt version (dev/index.php, dev/qr.html, dev/old.php, dev/about.php)
+# dev config, to access the unbuilt version (dev/index.php, dev/qr.html, dev/old.php)
 - url: /dev/model/asyncRequests.json
   script: model/asyncRequests.php
 - url: /dev/old
   script: dev/old.php
-- url: /dev/about
-  script: dev/about.php
 - url: /dev
   script: dev/index.php
 
@@ -69,14 +67,6 @@ handlers:
 - url: /old
   static_files: wowtooold.html
   upload: wowtooold.html
-  http_headers:
-    Content-language: en
-    Content-type: text/html; charset=utf-8
-    Cache-Control: max-age=604800, must-revalidate
-    X-UA-Compatible: IE=edge,chrome=1
-- url: /about
-  static_files: about.html
-  upload: about.html
   http_headers:
     Content-language: en
     Content-type: text/html; charset=utf-8

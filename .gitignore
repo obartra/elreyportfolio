@@ -6,6 +6,7 @@
 /.sass-cache/
 /.git/
 /js/main.min.js
+/model/asyncRequests.json
 /index.html
 /about.html
 /wowtooold.html

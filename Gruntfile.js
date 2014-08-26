@@ -45,8 +45,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'index.html': 'grunt/tmp/index.html',
-					'wowtooold.html' : 'grunt/tmp/old.html',
-					'about.html' : 'grunt/tmp/about.html'
+					'wowtooold.html' : 'grunt/tmp/old.html'
 				}
 			}
 		},

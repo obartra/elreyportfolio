@@ -15,12 +15,6 @@ ob_end_clean();
 file_put_contents(PUBLIC_PATH . 'grunt/tmp/old.html', $contentOld);
 
 ob_start();
-	include(PUBLIC_PATH . 'dev/about.php');
-	$contentOld = ob_get_contents();
-ob_end_clean();
-file_put_contents(PUBLIC_PATH . 'grunt/tmp/about.html', $contentOld);
-
-ob_start();
 	include(PUBLIC_PATH . 'model/asyncRequests.php');
 	$contentJson = ob_get_contents();
 ob_end_clean();

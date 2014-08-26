@@ -7,7 +7,15 @@ require([], function(){
 			xhr.responseType = 'json';
 			xhr.onload = function() {
 				if (xhr.status == 200) {
-					callback(true, xhr.response);
+					var json;
+					if (typeof xhr.response === 'string'){
+						json = JSON.parse(xhr.response || '{}'); //for IE10+
+					}else if (xhr.response){
+						json = xhr.response; //for real browsers
+					}else if (xhr.responseText){
+						json = JSON.parse(xhr.responseText || '{}'); //for IE9-
+					}
+					callback(true, json);
 				} else {
 					callback(false, xhr.status);
 				}
