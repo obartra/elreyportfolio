@@ -16,12 +16,12 @@
 		>
 			<ul>
 				<li
-					ng-click="page = pageNames.photos; singular = false;"
+					ng-click="page = pageNames.photos;"
 					ng-show="page === pageNames.photos || showPopup"
 				>Performances</li>
 				<li
 					ng-cloak
-					ng-click="page = pageNames.bio; singular = true;"
+					ng-click="page = pageNames.bio;"
 					ng-show= "page === pageNames.bio || showPopup"
 				>Biography</li>
 				<li
@@ -33,4 +33,11 @@
 			</ul>
 		</nav>
 	</h2>
+	<nav class="small-screen-nav">
+		<ul>
+			<li ng-click="page = pageNames.photos" class="active" ng-class="{active : page === pageNames.photos}">Performances</li>
+			<li ng-click="page = pageNames.bio" ng-class="{active : page === pageNames.bio}">Bio</li>
+			<li><a href="/resume" target="_blank">Resume</a></li>
+		</ul>
+	</nav>
 </div>

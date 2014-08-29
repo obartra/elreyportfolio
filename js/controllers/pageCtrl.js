@@ -8,5 +8,12 @@ define(['angular', 'js/app'], function(ng, app){
 			photos : 'Performances'
 		};
 		$scope.page = $scope.pageNames.photos;
+		$scope.$watch('page', function(newPage){
+			if (newPage === $scope.pageNames.bio){
+				$scope.singular = true;
+			}else{
+				$scope.singular = false;
+			}
+		});
 	}]);
 });

@@ -12,7 +12,6 @@ $large-width-control: 670;
 
 @import "header";
 @import "content";
-@import "bio";
 @import "footer";
 
 @media screen and (min-width: #{$small-width-control}px){
