@@ -1,5 +1,7 @@
 <?
-	define('PUBLIC_PATH', dirname(__FILE__) . '/../');
+	if (!$build){
+		define('PUBLIC_PATH', dirname(__FILE__) . '/../');
+	}
 ?>
 
 <!DOCTYPE html>

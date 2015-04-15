@@ -30,6 +30,12 @@
 				>
 					<a href="/resume" target="_blank">Resume</a>
 				</li>
+				<li
+					ng-cloak
+					ng-show="showPopup"
+				>
+					<a href="//events.elrey.dance">Events</a>
+				</li>
 			</ul>
 		</nav>
 	</h2>
@@ -38,6 +44,7 @@
 			<li ng-click="page = pageNames.photos" class="active" ng-class="{active : page === pageNames.photos}">Performances</li>
 			<li ng-click="page = pageNames.bio" ng-class="{active : page === pageNames.bio}">Bio</li>
 			<li><a href="/resume" target="_blank">Resume</a></li>
+			<li><a href="//events.elrey.dance">Events</a></li>
 		</ul>
 	</nav>
 </div>
